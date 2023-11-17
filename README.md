@@ -205,36 +205,35 @@ private void CollectAllExpOrbs()
 	List<GameObject> expOrbsToDestroy = new List<GameObject>();
 	GameObject[] expOrbs = GameObject.FindGameObjectsWithTag(_expOrbTag);
 
-        _amount = expOrbs.Length;
-        foreach (GameObject expOrb in expOrbs)
-        {
-            if (expOrb.CompareTag("Exp"))
-            {
-                PickupItem exp = expOrb.GetComponent<PickupItem>();
+	_amount = expOrbs.Length;
+	foreach (GameObject expOrb in expOrbs)
+	{
+		if (expOrb.CompareTag("Exp"))
+		{
+			PickupItem exp = expOrb.GetComponent<PickupItem>();
 
-                Vector3 position = new Vector3(_player.position.x, 1f, _player.position.z);
-                Vector3 direction = position - expOrb.transform.position;
+			Vector3 position = new Vector3(_player.position.x, 1f, _player.position.z);
+			Vector3 direction = position - expOrb.transform.position;
 
-                float distance = direction.magnitude;
-                direction.Normalize();
+			float distance = direction.magnitude;
+			direction.Normalize();
 
-                expOrb.transform.position += direction * Mathf.Min(_attractionSpeed * Time.deltaTime, distance);
+			expOrb.transform.position += direction * Mathf.Min(_attractionSpeed * Time.deltaTime, distance);
 
-                if (distance < 0.1f)
-                {
-                    if (exp != null)
-                    {
-                        _amount--;
-                        _playerExp.setExp(exp.expValue);
-                        if (expOrb != null)
-                        {
-                            Destroy(expOrb.gameObject);
-                        }
-
-                    }
+			if (distance < 0.1f)
+			{
+				if (exp != null)
+				{
+					_amount--;
+					_playerExp.setExp(exp.expValue);
+					if (expOrb != null)
+					{
+						Destroy(expOrb.gameObject);
+					}
                 }
             }
         }
+	}
 }
 ```
 
