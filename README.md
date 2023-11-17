@@ -9,7 +9,7 @@ Here are a couple of code snippets to show how I implement features. There are p
 ## Snippets of Code Structures
 - [Ability System](#ability-system)<br>
 - [Enemy Spawner](#enemy-spawn-system)<br>
-- [EXP aborber](#exp-aborsber)<br>
+- [EXP Absorber](#exp-absorber)<br>
 - [Future Implements](#future-implements)<br>
 - [Disclaimer](#disclaimer)<br>
 
@@ -195,7 +195,7 @@ public class Spawner : MonoBehaviour
     }
 ```
 
-#### EXP aborsber
+#### EXP absorber
 To implement a EXP absorption mechanic in my game, I crafted a function called CollectAllEXPOrbs. This function locates all game objects tagged as 'Exp' within the scene. I then calculated the direction of each EXP orb in relation to the player and moved them toward the player's position using `Math.Min()`, creating a visually satisfying magnet effect. <br>
 However, an issue I have now is that when an enemy is destroyed and the EXP orb is instantiated, that orb will also move towards the player when the `EXP magnet` is active. To fix this I probably need to create a list that takes all the **current** orbs in scenes and loop trough that instead of relying on a fixed amount.
 
