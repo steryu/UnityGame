@@ -249,5 +249,8 @@ I'll try to make the game minimal, but here are some key features in mind:
 - A touch of cooking
   and more...
 
+Thank you for reading!
+
 #### Disclaimer
-This project is still a work in progress. It's public only so I can showcase it in my portfolio.
+This repository only shows the script files and not the working game. 
+This project is still a work in progress. It's only public so I can showcase it in my portfolio.
