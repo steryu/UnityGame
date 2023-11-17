@@ -7,11 +7,11 @@ A month ago I started making a roquelike game in Unity using C#. And since I hav
 
 Here are a couple of code snippets to show how I implement features. There are probaly better ways to do this, but for now this is what i came up with :).
 ## Snippets of Code Structures
-[Ability System](#ability-system)<br>
-[Enemy Spawner](#Enemy-spawn-system)<br>
-[EXP aborber](#EXP-aborsber)<br>
-[Future Implements](#Future-Implements)<br>
-[Disclaimer](#Disclaimer)<br>
+- [Ability System](#ability-system)<br>
+- [Enemy Spawner](#enemy-spawn-system)<br>
+- [EXP aborber](#exp-aborsber)<br>
+- [Future Implements](#future-implements)<br>
+- [Disclaimer](#disclaimer)<br>
 
 #### Ability System
 RoqueLike games are my favorite genres and what I enjoy most about it, is the extensive and diverse range of abilities that can be upgraded and merged together with other ones. I hope to do the same in my project. Using a good data managment system to easily add abilities on the fly was tricky to do, especially since I'm doing this on my own. But I've implemented a way, that I believe is handy.
