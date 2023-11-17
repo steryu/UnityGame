@@ -7,10 +7,10 @@ A month ago I started making a roquelike game in Unity using C#. I always wanted
 Here are a couple of code snippets to show how I implement features. There are probaly better ways to do this, but for now this is what i came up with :).
 ## Snippets of Code Structures
 [Ability System](#ability-system)<br>
-[Enemy Spawner](#ability-system)<br>
-[EXP aborber](#ability-system)<br>
-[Futere Implements](#ability-system)<br>
-[Disclaimer](#ability-system)<br>
+[Enemy Spawner](#Enemy-spawn-system)<br>
+[EXP aborber](#EXP-aborsber)<br>
+[Futere Implements](##Future-Implements)<br>
+[Disclaimer](#Disclaimer)<br>
 
 #### Ability System
 RoqueLike games are my favorite genres and what I enjoy most about it, is the extensive library of abilities that can be upgraded an merge with other ones. I hope to do the same in my project. Using a good data managment system to easily add abilities on the fly was tricky to do, especially since i'm doing this on my own. But i've implement a way, that i believe is handy.
@@ -55,6 +55,7 @@ After that i made `unique ability class` with the possibility to have unique pro
 ![UpgradesInspector](https://github.com/steryu/UnityGamey/blob/main/images/Screenshot%202023-11-17%20140828.png)
 
 Then I put the abilties that are unlocked to the player in a database. Every time the player levels up in game by collecting EXP points you have the options the select 1 of 3 abilities. These are abilties chosen at random from the `database`. 
+
 ```C#
 private void DisplayAbilities()
 {
@@ -247,4 +248,5 @@ Ill try to make the game "simple" and minimal, but here are some features that i
 - Cooking
 - and more...
 
+#### Disclaimer
 This project is still a work in progress. It's public only so I can show it in my portfolio
