@@ -1,6 +1,7 @@
 # A Untitled Unity Game
+A hobby game project I'm currently working on.
 
-A month ago I started making a roquelike game in Unity using C#. I always wanted to start a hobby project like this and since I have two year of coding experience, I decided to make this project a bigger one.
+A month ago I started making a roquelike game in Unity using C#. And since I have two years of coding experience in C, I decided to make this project a big one.
 
 ![GameScreenshot](https://github.com/steryu/UnityGamey/blob/main/images/Screenshot%202023-11-17%20110857.png)
 
