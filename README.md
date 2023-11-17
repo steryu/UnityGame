@@ -227,10 +227,10 @@ private void CollectAllExpOrbs()
 				{
 					_amount--;
 					_playerExp.setExp(exp.expValue);
-					if (expOrb != null)
-					{
-						Destroy(expOrb.gameObject);
-					}
+				}
+				if (expOrb != null)
+				{
+					Destroy(expOrb.gameObject);
 				}
 			}
 		}
