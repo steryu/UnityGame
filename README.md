@@ -1,6 +1,6 @@
 # A Untitled Unty game
 
-A month ago I started making a roquelike game in Unity using C#. I always wanted to start a hobby project like this and since I have two year coding experience, I decided to make my first project a bigger one. Learning C# was also not difficult at all because my first language was C.
+A month ago I started making a roquelike game in Unity using C#. I always wanted to start a hobby project like this and since I have two year of coding experience, I decided to make this project a bigger one.
 
 ![GameScreenshot](https://github.com/steryu/UnityGamey/blob/main/images/Screenshot%202023-11-17%20110857.png)
 
@@ -13,10 +13,9 @@ Here are a couple of code snippets to show how I implement features. There are p
 [Disclaimer](#Disclaimer)<br>
 
 #### Ability System
-RoqueLike games are my favorite genres and what I enjoy most about it, is the extensive library of abilities that can be upgraded an merge with other ones. I hope to do the same in my project. Using a good data managment system to easily add abilities on the fly was tricky to do, especially since i'm doing this on my own. But i've implement a way, that i believe is handy.
+RoqueLike games are my favorite genres and what I enjoy most about it, is the extensive and diverse range of abilities that can be upgraded and merged together with other ones. I hope to do the same in my project. Using a good data managment system to easily add abilities on the fly was tricky to do, especially since I'm doing this on my own. But I've implemented a way, that I believe is handy.
 
-I made a `ability base class` with all the data a basic ability needs and `abilityUpgrade class` for upgrades. 
-The upgrades are added as an array in the base class.
+I started with the `Ability Base class`. It holds all the basic data an ability needs. Then I added an `AbilityUpgrade class` for upgrades, and put it into an array within the base class.
 
 ```C#
 public class Ability : ScriptableObject
@@ -50,11 +49,11 @@ public class AbilityUpgrade
     public int Amount;
 }
 ```
-After that i made `unique ability class` with the possibility to have unique properties, like elemental damage, that inherits form the `base ability class`. This class is also scriptable object which means i can easily adjust properties in the inspector. with this system I can create an abilty with an array of upgrades like this:
+The `UniqueAbility class` inherits from the `base class` and extends functionality to make it possible to add unique properties, such as elemental damage. This class is implemented as a ScriptableObject, providing a interface for tweaking properties directly within the Unity inspector. With this approach I can create an abilty with an array of upgrades like this:
 
 ![UpgradesInspector](https://github.com/steryu/UnityGamey/blob/main/images/Screenshot%202023-11-17%20140828.png)
 
-Then I put the abilties that are unlocked to the player in a database. Every time the player levels up in game by collecting EXP points you have the options the select 1 of 3 abilities. These are abilties chosen at random from the `database`. 
+To manage the available abilities, I made a database. Every time the player gains experience points and levels up, they are presented with a selection of three abilities and these choices are randomly drawn from the ability database.
 
 ```C#
 private void DisplayAbilities()
@@ -84,8 +83,7 @@ private void DisplayAbilities()
     }
 }
 ```
-
-When the ability is chosen, a copy is is put in the `arsenal` to prevent overwriting the base values and at the same time a copy of the upgrade for that ability is made an put in the database while the old one is removed. 
+When an ability is chosen, a duplicate is instantiated in the "arsenal," to prevent overwriting the base values. Simultaneously, a copy of the corresponding upgrade is made and added into the database, replacing the previous version. 
 
 ```C#
 public void AddAbilityToArsenal(Ability ability)
@@ -114,8 +112,7 @@ public void AddAbilityToArsenal(Ability ability)
     }
 }
 ```
-The abilities in the arsenal are automaticly called in update().
-
+The abilities stored in the arsenal are automaticly called in the script's `update()` method.
 
 #### Enemy spawn system
 I wanted to make a spawn system that spawn emeies with an interval and an certain amount. I did this by creating an `spawner class` that hold an array of `EnemySpawner scriptible objects`
@@ -241,9 +238,12 @@ private void CollectAllExpOrbs()
 ## Future Implements
 These were code snippets of some of the many scripts i made to create these features. I plan to use code only to make my dream game. I'm having so much fun creating this game and i have some many ideas to want to bring to live! It will time to do it but ill do my best to make it come trough.
 
+but also showcases my proficiency in designing and implementing intricate game mechanics within the Unity framework.
+
 Ill try to make the game "simple" and minimal, but here are some features that i want to implement:
 - Lots of abilities and a couple of enemioes
 - Able to merge abilies to make unique variations to make every run different
+- A good scaling system
 - Rich story line and driven with an affinity system to unlock new abilities
 - Cooking
 - and more...
