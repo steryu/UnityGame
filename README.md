@@ -238,7 +238,7 @@ private void CollectAllExpOrbs()
 }
 ```
 
-# Future Implements
+## Future Implements
 These were code snippets of some of the many scripts i made to create these features. I plan to use code only to make my dream game. I'm having so much fun creating this game and i have some many ideas to want to bring to live! It will time to do it but ill do my best to make it come trough.
 
 Ill try to make the game "simple" and minimal, but here are some features that i want to implement:
