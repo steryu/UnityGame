@@ -236,18 +236,18 @@ private void CollectAllExpOrbs()
 }
 ```
 
-## Future Implements
-These were code snippets of some of the many scripts i made to create these features. I plan to use code only to make my dream game. I'm having so much fun creating this game and i have some many ideas to want to bring to live! It will time to do it but ill do my best to make it come trough.
+I hope these little snippets showcases my proficiency in implement game mechanics.
 
-but also showcases my proficiency in designing and implementing intricate game mechanics within the Unity framework.
+#### Future Implements
+I'm having so much fun coding this game. There are a lot of challanges but it's so satisfiyting when you figure it out and it works, and when you see it in game it makes all the stuggles worth it. I've got lots and lots of ideas, and I'm committed to putting in the time and effort to bring them to life. I'm so excited!
 
-Ill try to make the game "simple" and minimal, but here are some features that i want to implement:
-- Lots of abilities and a couple of enemioes
-- Able to merge abilies to make unique variations to make every run different
-- A good scaling system
-- Rich story line and driven with an affinity system to unlock new abilities
-- Cooking
-- and more...
+I'll try to make the game minimal, but here are some key features in mind:
+- Loads of abilities and more of enemies
+- To be able to merge skills for unique variations to keep every run fresh
+- A solid scaling system
+- A rich storyline with an affinity system to unlock new abilities
+- A touch of cooking
+  and more...
 
 #### Disclaimer
-This project is still a work in progress. It's public only so I can show it in my portfolio
+This project is still a work in progress. It's public only so I can showcase it in my portfolio.
