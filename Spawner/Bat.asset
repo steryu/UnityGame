@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a3d24e2242e5942895506057c88594, type: 3}
+  m_Name: Bat
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 490318393420170240, guid: 7187657034c65364fa4db417261d08d2, type: 3}
+  spawnTime: 0
+  spawnRange: {x: 20, y: 20}
+  spawnInterval: 3
+  amount: 5

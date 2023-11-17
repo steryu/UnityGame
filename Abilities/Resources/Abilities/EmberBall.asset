@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac604aab31b88d849ab80fbfb2f54f17, type: 3}
+  m_Name: EmberBall
+  m_EditorClassIdentifier: 
+  Prefab: {fileID: 4707754782748356359, guid: 3026cce345700f34dbb559f3981cc0b0, type: 3}
+  BaseName: EmberBall
+  Name: Ember Ball lv1
+  Description: 'Shoots a fireball '
+  Level: 0
+  subStats:
+    Damage: 10
+    ActiveTime: 1
+    CooldownTime: 0
+    Amount: 1
+  isUnlocked: 0
+  Upgrades:
+  - NewName: Fire Ball lv2
+    NewDescription: 30 damage
+    DamageAdd: 20
+    DamageMult: 0
+    Level: 1
+    Amount: 1
+  - NewName: Fire Ball lv3
+    NewDescription: 90 damage
+    DamageAdd: 60
+    DamageMult: 0
+    Level: 2
+    Amount: 1
+  IsOnCooldown: 0
+  instantiatedObject: {fileID: 0}
+  cooldownTimer: 0
+  activeTimer: 0
+  resetActiveTimer: 0
+  newPosition: {x: 0, y: 0, z: 0}
