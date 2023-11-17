@@ -231,9 +231,9 @@ private void CollectAllExpOrbs()
 					{
 						Destroy(expOrb.gameObject);
 					}
-                }
-            }
-        }
+				}
+			}
+		}
 	}
 }
 ```
