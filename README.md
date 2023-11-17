@@ -195,7 +195,8 @@ public class Spawner : MonoBehaviour
 ```
 
 #### EXP aborsber
-When the player pick's up and `EXP manget` all the EXP orbs in the scene should move to the player and be "aborbed". To create this a made an function called `collectallEXPorbs` in this function if look for all the gameobject using the tag 'Exp' then i calculaste the direction of the orb from the player and move it towards it using `Math.Min()`. Then i destroy the gameObjects. I have an issue that when an enemy is destroyed and drops and EXP orb that orb will also move towards the player when the `exp magnet` is active. To fix this I probably need to make an list that takes all the current orbs in scenes al loop trough that instead of realying on a fixed amount.
+To implement a EXP absorption mechanic in my game, I crafted a function called CollectAllEXPOrbs. This function locates all game objects tagged as 'Exp' within the scene. I then calculated the direction of each EXP orb in relation to the player and moved them toward the player's position using `Math.Min()`, creating a visually satisfying magnet effect. <br>
+However, an issue I have now is that when an enemy is destroyed and the EXP orb is instantiated, that orb will also move towards the player when the `EXP magnet` is active. To fix this I probably need to create a list that takes all the **current** orbs in scenes and loop trough that instead of relying on a fixed amount.
 
 ```C#
 private void CollectAllExpOrbs()
