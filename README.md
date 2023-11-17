@@ -1,4 +1,4 @@
-# A Untitled Unty game
+# A Untitled Unity Game
 
 A month ago I started making a roquelike game in Unity using C#. I always wanted to start a hobby project like this and since I have two year of coding experience, I decided to make this project a bigger one.
 
@@ -115,7 +115,7 @@ public void AddAbilityToArsenal(Ability ability)
 The abilities stored in the arsenal are automaticly called in the script's `update()` method.
 
 #### Enemy spawn system
-I wanted to make a spawn system that spawn emeies with an interval and an certain amount. I did this by creating an `spawner class` that hold an array of `EnemySpawner scriptible objects`
+I wanted to make an enemy spawning system that spawns enemies with an defined interval and amount. To achieve this, I created a `Spawner class`, that holds an array of `EnemySpawner` ScriptableObject instances.
 
 ```C#
 [CreateAssetMenu(fileName = "EnemySpawner", menuName = "Enemy Spawner/Enemy Type")]
@@ -129,7 +129,7 @@ public class EnemySpawner : ScriptableObject
 }
 ```
 
-The `spawner class` wil first intiziale a timer that use for the interval and the in de update() method loop trough the `EnemySpawer` array and spawn the enemies within a radom customizeable range and then automaticly follow the player.
+The `spawner class` will first initialize a timer that is used for the interval between spawns. In the `update()` method I loop trough the array of `EnemySpawner` instances. This loop calls the spawning of enemies based on the predefined intervals and instatiates the enemies within a radom customizable range. They then automaticly follow the player.
 
 ```C#
 public class Spawner : MonoBehaviour
