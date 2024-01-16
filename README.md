@@ -1,6 +1,6 @@
 # A Untitled Unity Game
 
-A month ago I started making a roquelike game in Unity using C#. And since I have two years of coding experience in C, I decided to make this project a big one.
+A roquelike game in Unity using C#
 
 ![GameScreenshot](https://github.com/steryu/UnityGamey/blob/main/images/Screenshot%202023-11-17%20110857.png)
 
