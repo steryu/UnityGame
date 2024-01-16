@@ -4,7 +4,7 @@ A roquelike game in Unity using C#
 
 ![GameScreenshot](https://github.com/steryu/UnityGamey/blob/main/images/Screenshot%202023-11-17%20110857.png)
 
-Here are a couple of code snippets to show how I implement features. There are probaly better ways to do this, but for now this is what i came up with :).
+Here are a couple of code snippets to show how I implemented these features.
 ## Snippets of Code Structures
 - [Ability System](#ability-system)<br>
 - [Enemy Spawner](#enemy-spawn-system)<br>
